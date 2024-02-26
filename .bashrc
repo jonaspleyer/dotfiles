@@ -7,3 +7,5 @@
 
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
+alias drivesync='ruby /opt/drivesync/drivesync.rb'
+alias drivesync='ruby /opt/drivesync/drivesync.rb'
