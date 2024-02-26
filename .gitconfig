@@ -1,0 +1,5 @@
+[user]
+	email = jonas.pleyer@fdm.uni-freiburg.de
+	name = Jonas Pleyer
+[credential]
+	helper = store

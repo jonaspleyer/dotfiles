@@ -1,0 +1,43 @@
+# Home Folder
+root=/home/jonas/
+root=ssh://jpleyer@pc-pleyer.fdm.privat
+
+# Directories
+follow = Path Documents
+
+# Ignore list
+ignore = Path .*
+ignore = Path BUILDDIR
+ignore = Path Downloads
+ignore = Path Desktop
+ignore = Path Dropbox
+ignore = Path Pictures
+ignore = Path tools
+ignore = Path Videos
+ignore = Path Zotero
+ignore = Path SharedDrive
+
+# Options
+fat=true
+auto=true
+links=true
+
+ignore = Path {Documents/Studium/PHD/03-software/ode_integrate/target}
+ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/target}
+ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/out}
+ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/.venv}
+ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/cellular_raza-examples/autophagy_pyo3/out}
+ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/cellular_raza-examples/pool_model_pyo3/out}
+ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/cellular_raza-homepage/content/docs}
+ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/cellular_raza-homepage/public_html}
+ignore = Path {Documents/Studium/PHD/03-software/plotters/target}
+ignore = Path {Documents/Studium/PHD/03-software/opencl3-select/target}
+
+ignore = Path {Documents/Studium/PHD/02-publications/2023-07-avidity-project-claudine-kraft/model/2023-autophagy/out}
+ignore = Path {Documents/Studium/PHD/02-publications/2023-07-avidity-project-claudine-kraft/model/2023-autophagy/target}
+ignore = Path {Documents/Studium/PHD/02-publications/2023-07-avidity-project-claudine-kraft/model/2023-autophagy/.venv}
+ignore = Path {Documents/Studium/PHD/02-publications/2023-07-avidity-project-claudine-kraft/model/2023-autophagy/docs/build}
+
+ignore = Path {anja+jonas/file_indexer/target}
+ignore = Path {anja+jonas/the-doc-doc/src-tauri/target}
+
