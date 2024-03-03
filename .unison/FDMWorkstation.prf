@@ -32,6 +32,7 @@ ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/cellular_raza-hom
 ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/cellular_raza-homepage/public_html}
 ignore = Path {Documents/Studium/PHD/03-software/plotters/target}
 ignore = Path {Documents/Studium/PHD/03-software/opencl3-select/target}
+ignore = Path {Documents/Studium/PHD/03-software/cargo-docs-rs/target}
 
 ignore = Path {Documents/Studium/PHD/02-publications/2023-07-avidity-project-claudine-kraft/model/2023-autophagy/out}
 ignore = Path {Documents/Studium/PHD/02-publications/2023-07-avidity-project-claudine-kraft/model/2023-autophagy/target}
