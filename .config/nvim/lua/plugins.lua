@@ -28,5 +28,9 @@ return require('packer').startup(function(use)
         }
     }
     use 'Mofiqul/vscode.nvim'
+
+    -- Typst
+    use 'nvarner/typst-lsp'
+    use {'kaarmu/typst.vim', ft={'typst'}}
 end)
 
