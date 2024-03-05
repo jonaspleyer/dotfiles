@@ -27,5 +27,6 @@ return require('packer').startup(function(use)
             {'rafamadriz/friendly-snippets'},
         }
     }
+    use 'Mofiqul/vscode.nvim'
 end)
 
