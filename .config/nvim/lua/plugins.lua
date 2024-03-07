@@ -27,7 +27,7 @@ return require('packer').startup(function(use)
             {'rafamadriz/friendly-snippets'},
         }
     }
-    use 'Mofiqul/vscode.nvim'
+    use 'AlexvZyl/nordic.nvim'
 
     -- Typst
     use 'nvarner/typst-lsp'

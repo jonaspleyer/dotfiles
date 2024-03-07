@@ -20,4 +20,5 @@ vim.opt.ttyfast=true            --Speed up scrolling in Vim
 --vim.opt.spell                 " enable spell check (may need to download language package)
 --vim.opt.noswapfile            " disable creating swap file
 --vim.opt.backupdir=~/.cache/vim " Directory to store backup files.
+vim.cmd.colorscheme 'nordic'
 
