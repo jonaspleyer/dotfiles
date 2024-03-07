@@ -1,6 +1,10 @@
 require 'nordic' .setup {
     -- This callback can be used to override the colors used in the palette.
-    on_palette = function(palette) return palette end,
+    on_palette = function(palette)
+        palette["gray2"] = "#5b647a"
+        palette["gray4"] = "#606d87"
+        return palette
+    end,
     -- Enable bold keywords.
     bold_keywords = false,
     -- Enable italic comments.
