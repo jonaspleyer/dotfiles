@@ -22,3 +22,10 @@ vim.opt.ttyfast=true            --Speed up scrolling in Vim
 --vim.opt.backupdir=~/.cache/vim " Directory to store backup files.
 vim.cmd.colorscheme 'nordic'
 
+vim.api.nvim_create_autocmd('LspAttach', {
+  callback = function(args)
+    vim.keymap.set('n', 'K', vim.lsp.buf.hover, { buffer = args.buf })
+    vim.keymap.set('n', 'L', vim.lsp.buf.rename, { buffer = args.buf })
+  end,
+})
+
