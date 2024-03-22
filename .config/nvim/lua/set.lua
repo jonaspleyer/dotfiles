@@ -29,3 +29,5 @@ vim.api.nvim_create_autocmd('LspAttach', {
   end,
 })
 
+vim.opt.colorcolumn = '100'
+
