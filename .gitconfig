@@ -9,19 +9,12 @@
 	helper = cache
 [safe]
 	directory = .
-	directory = .
-	directory = /storage/docs/jonas/Documents/Studium/2022-SS/2022-02-Agent-based-Modeling-and-Spatial-Turing-Pattern-Analysis
 	directory = /home/jonas
-	directory = /storage/docs/jonas/Documents/Studium/2022-SS/simulation_framework
-	directory = /home/jonas/Documents/Privat/Sudoku-Solver
-	directory = /storage/docs/jonas/Documents/Privat/Sudoku-Solver
-	directory = /storage/docs/jonas/Documents/Studium/2022-SS/introduction-to-systems-biology/2022-SS-Intro-Sys-Bio
-	directory = /home/jonas/Documents/Studium/2022-SS/julia-test
-	directory = /storage/docs/jonas/Documents/Studium/2022-SS/julia-test
-	directory = /storage/docs/jonas/Documents/Studium/2022-SS/slack-ip-updater
 [diff "pandoc"]
 	textconv = pandoc --to=markdown
-	prompt= false
+    prompt= false
+[diff "pandoc"]
+    textconv = pandoc --to=markdown
 [alias]
 	wdiff = diff --word-diff=color --unified=1
 [init]
