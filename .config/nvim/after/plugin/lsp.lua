@@ -11,7 +11,7 @@ lsp.nvim_workspace()
 lsp.on_attach(function(client, bufnr)
     local opts ={buffer = buffer, remap = false}
 
-    vim.keymap.set("n", "gd", function() vim.lsp.buf.definitino() end, opts)
+    vim.keymap.set("n", "gd", function() vim.lsp.buf.definition() end, opts)
 end)
 
 lsp.setup()
