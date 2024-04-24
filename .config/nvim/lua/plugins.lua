@@ -46,6 +46,9 @@ return require('packer').startup(function(use)
     use 'nvarner/typst-lsp'
     use {'kaarmu/typst.vim', ft={'typst'}}
 
+    -- Git inline
+    use 'lewis6991/gitsigns.nvim'
+
     -- Packer bootstrap
     if packer_bootstrap then
         require('packer').sync()
