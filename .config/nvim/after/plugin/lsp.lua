@@ -3,7 +3,10 @@ local lsp = require("lsp-zero")
 lsp.preset("recommended")
 
 lsp.ensure_installed({
-    'rust_analyzer'
+    'rust_analyzer',
+    "ruff",
+    "basedpyright",
+    "typst_lsp",
 })
 
 lsp.nvim_workspace()
@@ -21,3 +24,14 @@ vim.diagnostic.config({
     signs = false,
 })
 
+local lspconfig = require "lspconfig"
+lspconfig.basedpyright.setup {
+    settings = {
+        basedpyright = {
+            autoImportCompletion = true,
+            analysis = {
+                typeCheckingMode = "standard",
+            },
+        },
+    }
+}
