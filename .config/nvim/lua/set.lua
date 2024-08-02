@@ -8,7 +8,7 @@ vim.opt.softtabstop=4           --see multiple spaces as tabstops so <BS> does t
 vim.opt.expandtab=true          --converts tabs to white space
 vim.opt.shiftwidth=4            --width for autoindents
 vim.opt.autoindent=true         --indent a new line the same amount as the line just typed
-vim.opt.relativenumber=true     --add line numbers
+--vim.opt.relativenumber=true     --add line numbers
 vim.g.netrw_bufsettings = 'noma nomod nu rnu nobl nowrap ro'
                                 --add relative numbers for netrw as well
 vim.opt.wildmode=longest,list   --get bash-like tab completions
