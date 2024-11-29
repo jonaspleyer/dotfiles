@@ -1,8 +1,4 @@
-require('plugins')
-require('alexzyl-nordic')
-require('flake8')
-require('lewis6991-gitsigns')
-require('mason-config')
-require('rust-analyzer')
-require("set")
-
+require("config.lazy")
+require("config.alexzyl-nordic")
+-- require("config.rust-analyzer")
+require("config.set")
