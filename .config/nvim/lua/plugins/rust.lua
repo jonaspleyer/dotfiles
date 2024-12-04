@@ -76,6 +76,11 @@ return {
                             typeHints = false,
                             closingBraceHints = { enable = false },
                             parameterHints = false,
+                            genericParameterHints = {
+                                const = {
+                                    enable = false,
+                                },
+                            },
                         },
                     },
                 },
