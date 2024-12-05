@@ -1,4 +1,4 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-require("config.alexzyl-nordic")
+-- require("config.alexzyl-nordic")
 require("config.set")
