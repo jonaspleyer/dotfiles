@@ -1,12 +1,12 @@
 if lazyvim_docs then
     -- LSP Server to use for Python.
     -- Set to "basedpyright" to use basedpyright instead of pyright.
-    vim.g.lazyvim_python_lsp = "pyright"
+    vim.g.lazyvim_python_lsp = "basedpyright"
     -- Set to "ruff_lsp" to use the old LSP implementation version.
     vim.g.lazyvim_python_ruff = "ruff"
 end
 
-local lsp = vim.g.lazyvim_python_lsp or "pyright"
+local lsp = vim.g.lazyvim_python_lsp or "basedpyright"
 local ruff = vim.g.lazyvim_python_ruff or "ruff"
 
 return {
@@ -66,6 +66,28 @@ return {
             },
         },
     },
+
+    {
+        "neovim/nvim-lspconfig",
+        opts = {
+            servers = {
+                basedpyright = {
+                    settings = {
+                        basedpyright = {
+                            analysis = {
+                                typeCheckingMode = "standard",
+                                inlayHints = {
+                                    variableTypes = false,
+                                    callArgumentNames = false,
+                                },
+                            },
+                        },
+                    },
+                },
+            },
+        },
+    },
+
     {
         "neovim/nvim-lspconfig",
         opts = function(_, opts)
