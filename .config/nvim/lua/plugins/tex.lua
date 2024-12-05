@@ -51,6 +51,13 @@ return {
                             silent = true,
                         },
                     },
+                    opts = {
+                        inlayHints = {
+                            labelDefinitions = false,
+                            labelReferences = false,
+                            maxLength = 0,
+                        },
+                    },
                 },
             },
         },
