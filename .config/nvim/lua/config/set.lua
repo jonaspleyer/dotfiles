@@ -10,6 +10,9 @@ vim.opt.shiftwidth = 4 --width for autoindents
 vim.opt.autoindent = true --indent a new line the same amount as the line just typed
 vim.opt.number = true --add line numbers
 vim.opt.relativenumber = false -- use absolute numbers
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.textwidth = 100
 vim.g.netrw_bufsettings = "noma nomod nu nornu nobl nowrap ro"
 --add relative numbers for netrw as well
 vim.opt.wildmode = longest, list --get bash-like tab completions
