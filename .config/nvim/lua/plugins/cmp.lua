@@ -105,7 +105,6 @@ return {
             end
 
             local cmp = require("cmp")
-            print("Hello with new tab")
 
             opts.mapping = vim.tbl_extend("force", opts.mapping, {
                 ["<Tab>"] = cmp.mapping(function(fallback)
