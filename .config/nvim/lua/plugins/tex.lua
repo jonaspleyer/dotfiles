@@ -2,7 +2,7 @@ return {
     recommended = function()
         return LazyVim.extras.wants({
             ft = { "tex", "plaintex", "bib" },
-            root = { ".latexmkrc", ".texlabroot", "texlabroot", "Tectonic.toml" },
+            -- root = { ".latexmkrc", ".texlabroot", "texlabroot", "Tectonic.toml" },
         })
     end,
 
@@ -51,11 +51,17 @@ return {
                             silent = true,
                         },
                     },
-                    opts = {
-                        inlayHints = {
-                            labelDefinitions = false,
-                            labelReferences = false,
-                            maxLength = 0,
+                    settings = {
+                        texlab = {
+                            inlayHints = false,
+                            -- inlay_hints = {
+                            --     labelDefinitions = false,
+                            --     labelReferences = false,
+                            --     maxLength = 0,
+                            -- },
+                            -- diagnostics = {
+                            --     ignoredPatterns = { "Unused label", "Undefined reference" },
+                            -- },
                         },
                     },
                 },
