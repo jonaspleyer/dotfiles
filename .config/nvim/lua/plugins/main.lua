@@ -43,15 +43,6 @@ return {
         },
     },
 
-    {
-        "neovim/nvim-lspconfig",
-        ---@class PluginLspOpts
-        opts = {
-            ---@type lspconfig.options
-            servers = {},
-        },
-    },
-
     -- add tsserver and setup with typescript.nvim instead of lspconfig
     {
         "neovim/nvim-lspconfig",
