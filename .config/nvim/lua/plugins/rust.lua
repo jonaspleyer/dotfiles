@@ -81,6 +81,7 @@ return {
                                     enable = false,
                                 },
                             },
+                            chainingHints = false,
                         },
                     },
                 },
