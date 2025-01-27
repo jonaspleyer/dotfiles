@@ -117,6 +117,7 @@ return {
                 "tsx",
                 "typescript",
                 "vim",
+                "wgsl",
                 "yaml",
             },
         },
