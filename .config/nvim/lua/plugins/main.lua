@@ -43,6 +43,17 @@ return {
         },
     },
 
+    {
+        "neovim/nvim-lspconfig",
+        opts = {
+            inlay_hints = { enabled = false },
+            servers = {
+                wgsl_analyzer = {},
+            },
+            conceallevel = 0,
+        },
+    },
+
     -- add tsserver and setup with typescript.nvim instead of lspconfig
     {
         "neovim/nvim-lspconfig",
