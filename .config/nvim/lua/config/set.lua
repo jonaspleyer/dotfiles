@@ -38,4 +38,4 @@ vim.api.nvim_create_autocmd("LspAttach", {
 })
 
 vim.opt.colorcolumn = "100"
-vim.opt_local.conceallevel = 0
+vim.opt.conceallevel = 0
