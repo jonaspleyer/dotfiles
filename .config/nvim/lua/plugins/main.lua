@@ -170,8 +170,6 @@ return {
                 "shellcheck",
                 "shfmt",
                 "flake8",
-                "markdownlint-cli2",
-                "markdown-toc",
             },
         },
     },
