@@ -28,17 +28,25 @@ ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/out}
 ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/.venv}
 ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/cellular_raza-examples/autophagy_pyo3/out}
 ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/cellular_raza-examples/pool_model_pyo3/out}
-ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/cellular_raza-homepage/static/docs}
-ignore = Path {Documents/Studium/PHD/03-software/cellular_raza/cellular_raza-homepage/public_html}
+ignore = Path {Documents/Studium/PHD/03-software/cellular_raza-homepage/static/docs}
+ignore = Path {Documents/Studium/PHD/03-software/cellular_raza-homepage/public_html}
+ignore = Path {Documents/Studium/PHD/03-software/cellular_raza-homepage/public}
+ignore = Path {Documents/Studium/PHD/03-software/cellular_raza-homepage/cellular_raza/target}
 ignore = Path {Documents/Studium/PHD/03-software/plotters/target}
 ignore = Path {Documents/Studium/PHD/03-software/opencl3-select/target}
 ignore = Path {Documents/Studium/PHD/03-software/cargo-docs-rs/target}
+ignore = Path {Documents/Studium/PHD/03-software/cr_trichome/target}
+ignore = Path {Documents/Studium/PHD/03-software/cr_trichome/out}
+ignore = Path {Documents/Studium/PHD/03-software/cr_trichome/.venv}
 
 ignore = Path {Documents/Studium/PHD/02-publications/2023-07-avidity-project-claudine-kraft/model/2023-autophagy/out}
 ignore = Path {Documents/Studium/PHD/02-publications/2023-07-avidity-project-claudine-kraft/model/2023-autophagy/target}
 ignore = Path {Documents/Studium/PHD/02-publications/2023-07-avidity-project-claudine-kraft/model/2023-autophagy/.venv}
 ignore = Path {Documents/Studium/PHD/02-publications/2023-07-avidity-project-claudine-kraft/model/2023-autophagy/docs/build}
+ignore = Path {Documents/Studium/PHD/02-publications/2024-e-coli-mechanical-model/cr_mech_coli/target}
+ignore = Path {Documents/Studium/PHD/02-publications/2024-e-coli-mechanical-model/.venv}
 
 ignore = Path {anja+jonas/file_indexer/target}
 ignore = Path {anja+jonas/the-doc-doc/src-tauri/target}
+ignore = Path {anja+jonas/Bilder}
 
