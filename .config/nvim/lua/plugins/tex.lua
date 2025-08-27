@@ -24,12 +24,13 @@ return {
 
     {
         "lervag/vimtex",
-        lazy = false, -- lazy-loading will disable inverse search
+        -- lazy = false, -- lazy-loading will disable inverse search
         config = function()
             vim.g.vimtex_mappings_disable = { ["n"] = { "K" } } -- disable `K` as it conflicts with LSP hover
             vim.g.vimtex_quickfix_method = vim.fn.executable("pplatex") == 1 and "pplatex"
                 or "latexlog"
             vim.g.vimtex_syntax_conceal_disable = true
+            vim.g.vimtex_compiler_method = false
         end,
         keys = {
             { "<localLeader>l", "", desc = "+vimtex" },
@@ -53,15 +54,10 @@ return {
                     },
                     settings = {
                         texlab = {
-                            inlayHints = false,
-                            -- inlay_hints = {
-                            --     labelDefinitions = false,
-                            --     labelReferences = false,
-                            --     maxLength = 0,
-                            -- },
-                            -- diagnostics = {
-                            --     ignoredPatterns = { "Unused label", "Undefined reference" },
-                            -- },
+                            build = {
+                                onSave = false,
+                            },
+                            latexFormatter = "none",
                         },
                     },
                 },
