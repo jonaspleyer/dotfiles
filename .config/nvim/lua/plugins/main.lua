@@ -137,6 +137,20 @@ return {
         end,
     },
 
+    {
+        "saghen/blink.cmp",
+        opts = {
+            fuzzy = {
+                implementation = "rust",
+            },
+            sources = {
+                per_filetype = {
+                    tex = { "buffer", "path" },
+                },
+            },
+        },
+    },
+
     -- the opts function can also be used to change the default opts:
     {
         "nvim-lualine/lualine.nvim",
