@@ -32,6 +32,7 @@ return {
                         basedpyright = {
                             analysis = {
                                 typeCheckingMode = "standard",
+                                autoSearchPaths = false,
                                 inlayHints = {
                                     variableTypes = false,
                                     callArgumentNames = false,

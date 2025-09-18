@@ -145,7 +145,7 @@ return {
             },
             sources = {
                 per_filetype = {
-                    tex = { "buffer", "path" },
+                    tex = { "lsp", "buffer", "path" },
                 },
             },
         },
@@ -177,7 +177,7 @@ return {
 
     -- add any tools you want to have installed below
     {
-        "williamboman/mason.nvim",
+        "mason-org/mason.nvim",
         opts = {
             ensure_installed = {
                 "stylua",

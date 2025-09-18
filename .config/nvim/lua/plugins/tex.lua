@@ -57,6 +57,7 @@ return {
                             build = {
                                 onSave = false,
                             },
+                            -- bibtexFormatter = "none",
                             latexFormatter = "none",
                         },
                     },
