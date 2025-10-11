@@ -59,6 +59,7 @@ return {
                     init_options = {
                         settings = {
                             logLevel = "error",
+                            lineLength = "100",
                         },
                     },
                     keys = {
