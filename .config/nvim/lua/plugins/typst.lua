@@ -1,33 +1,37 @@
 return {
     -- requires tinymist
     {
-        "mason-org/mason.nvim",
+        "nvim-treesitter/nvim-treesitter",
         opts = {
             ensure_installed = {
-                "tinymist",
+                "typst",
             },
         },
     },
     -- add tinymist to lspconfig
     {
         "neovim/nvim-lspconfig",
-        dependencies = {
-            "mason.nvim",
-            "mason-org/mason.nvim",
-        },
-        ---@class PluginLspOpts
         opts = {
-            ---@type lspconfig.options
             servers = {
                 tinymist = {
-                    --- todo: these configuration from lspconfig maybe broken
-                    single_file_support = true,
-                    root_dir = function()
-                        return vim.fn.getcwd()
-                    end,
-                    --- See [Tinymist Server Configuration](https://github.com/Myriad-Dreamin/tinymist/blob/main/Configuration.md) for references.
+                    keys = {
+                        {
+                            "<leader>cP",
+                            function()
+                                local buf_name = vim.api.nvim_buf_get_name(0)
+                                local file_name = vim.fn.fnamemodify(buf_name, ":t")
+                                LazyVim.lsp.execute({
+                                    command = "tinymist.pinMain",
+                                    arguments = { buf_name },
+                                })
+                                LazyVim.info("Tinymist: Pinned " .. file_name)
+                            end,
+                            desc = "Pin main file",
+                        },
+                    },
+                    single_file_support = true, -- Fixes LSP attachment in non-Git directories
                     settings = {
-                        exportPdf = "onSave",
+                        formatterMode = "typstyle",
                     },
                 },
             },
