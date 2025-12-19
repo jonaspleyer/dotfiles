@@ -75,7 +75,7 @@ return {
                 [ruff] = function()
                     Snacks.util.lsp.on(function(_, client)
                         -- Disable hover in favor of Pyright
-                        client.server_capabilities.hoverProvider = false
+                        -- client.server_capabilities.hoverProvider = false
                     end, ruff)
                 end,
             },
