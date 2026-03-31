@@ -1,0 +1,9 @@
+[general]
+live_config_reload = true
+
+[window]
+dimensions = { columns = 20, lines = 100 }
+decorations = "None"
+
+[font]
+size = 11
