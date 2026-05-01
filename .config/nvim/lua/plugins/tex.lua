@@ -22,20 +22,20 @@ return {
         end,
     },
 
-    {
-        "lervag/vimtex",
-        -- lazy = false, -- lazy-loading will disable inverse search
-        config = function()
-            vim.g.vimtex_mappings_disable = { ["n"] = { "K" } } -- disable `K` as it conflicts with LSP hover
-            vim.g.vimtex_quickfix_method = vim.fn.executable("pplatex") == 1 and "pplatex"
-                or "latexlog"
-            vim.g.vimtex_syntax_conceal_disable = true
-            vim.g.vimtex_compiler_method = false
-        end,
-        keys = {
-            { "<localLeader>l", "", desc = "+vimtex" },
-        },
-    },
+    -- {
+    --     "lervag/vimtex",
+    --     -- lazy = false, -- lazy-loading will disable inverse search
+    --     config = function()
+    --         vim.g.vimtex_mappings_disable = { ["n"] = { "K" } } -- disable `K` as it conflicts with LSP hover
+    --         vim.g.vimtex_quickfix_method = vim.fn.executable("pplatex") == 1 and "pplatex"
+    --             or "latexlog"
+    --         vim.g.vimtex_syntax_conceal_disable = true
+    --         vim.g.vimtex_compiler_method = false
+    --     end,
+    --     keys = {
+    --         { "<localLeader>l", "", desc = "+vimtex" },
+    --     },
+    -- },
 
     -- Correctly setup lspconfig for LaTeX 🚀
     {
@@ -45,12 +45,12 @@ return {
             servers = {
                 texlab = {
                     keys = {
-                        {
-                            "<Leader>K",
-                            "<plug>(vimtex-doc-package)",
-                            desc = "Vimtex Docs",
-                            silent = true,
-                        },
+                        -- {
+                        --     "<Leader>K",
+                        --     "<plug>(vimtex-doc-package)",
+                        --     desc = "Vimtex Docs",
+                        --     silent = true,
+                        -- },
                     },
                     settings = {
                         texlab = {
