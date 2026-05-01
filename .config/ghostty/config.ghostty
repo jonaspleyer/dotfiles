@@ -1,0 +1,9 @@
+background = 242933
+foreground = ffffff
+font-family = "Hack"
+font-size = 10
+window-decoration = none
+window-padding-y = 0,0
+window-padding-x = 0,0
+window-vsync = true
+# language = us
