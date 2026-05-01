@@ -70,6 +70,29 @@ input {
     // focus-follows-mouse max-scroll-amount="0%"
 }
 
+output "DP-4" {
+    mode "1920x1080@164.998"
+    transform "90"
+    position x=0 y=-120
+}
+
+output "DP-2" {
+    mode "2560x1440@169.831"
+}
+
+output "DP-2" {
+    mode "2560x1440@170.001"
+}
+
+output "DP-3" {
+    mode "2560x1440@170.001"
+}
+
+output "HDMI-A-1" {
+    mode "1920x1080"
+    scale 0.75
+}
+
 // You can configure outputs by their name, which you can find
 // by running `niri msg outputs` while inside a niri instance.
 // The built-in laptop monitor is usually called "eDP-1".
