@@ -62,21 +62,15 @@ return {
                             lineLength = "100",
                         },
                     },
-                    keys = {
-                        {
-                            "<leader>co",
-                            LazyVim.lsp.action["source.organizeImports"],
-                            desc = "Organize Imports",
-                        },
-                    },
                 },
+                ruff_lsp = {},
             },
             setup = {
                 [ruff] = function()
-                    Snacks.util.lsp.on(function(_, client)
+                    Snacks.util.lsp.on({ name = ruff }, function(_, client)
                         -- Disable hover in favor of Pyright
-                        -- client.server_capabilities.hoverProvider = false
-                    end, ruff)
+                        client.server_capabilities.hoverProvider = false
+                    end)
                 end,
             },
         },
@@ -95,21 +89,17 @@ return {
 
     {
         "linux-cultist/venv-selector.nvim",
-        dependencies = {
-            "neovim/nvim-lspconfig",
-            {
-                "nvim-telescope/telescope.nvim",
-                branch = "0.1.x",
-                dependencies = { "nvim-lua/plenary.nvim" },
-            }, -- optional: you can also use fzf-lua, snacks, mini-pick instead.
+        cmd = "VenvSelect",
+        opts = {
+            options = {
+                notify_user_on_venv_activation = true,
+                override_notify = false,
+            },
         },
-        ft = "python", -- Load when opening Python files
+        --  Call config for Python files and load the cached venv automatically
+        ft = "python",
         keys = {
-            { ",v", "<cmd>VenvSelect<cr>" }, -- Open picker on keymap
-        },
-        opts = { -- this can be an empty lua table - just showing below for clarity.
-            search = {}, -- if you add your own searches, they go here.
-            options = {}, -- if you add plugin options, they go here.
+            { "<leader>cv", "<cmd>:VenvSelect<cr>", desc = "Select VirtualEnv", ft = "python" },
         },
     },
 }
