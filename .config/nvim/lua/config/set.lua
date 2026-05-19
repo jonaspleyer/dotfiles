@@ -39,3 +39,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 
 vim.opt.colorcolumn = "100"
 vim.opt.conceallevel = 0
+
+-- Remap to exit terminal more easily
+vim.keymap.set("t", "<C-w>", [[<C-\><C-n><C-w>]])
+vim.keymap.set("t", "<C-Space>", [[<C-\><C-n>]])
