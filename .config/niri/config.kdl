@@ -134,6 +134,8 @@ output "eDP-1" {
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
+    empty-workspace-above-first
+
     // Set gaps around windows in logical pixels.
     gaps 0
 
